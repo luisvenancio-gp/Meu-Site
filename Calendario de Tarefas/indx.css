@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body {
+    background: url(img/background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.enviar {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.enviar-btn {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: yellowgreen;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.enviar-btn:active {
+    opacity: 0.6;
+}
+
+.enviar-btn:hover {
+    opacity: 0.8;
+}
+
+.list {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.list-element {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.list-element:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.done {
+    background-color: #0f1724;
+    color: white;
+    text-decoration: line-through;
+}

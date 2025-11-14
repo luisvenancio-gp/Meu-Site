@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: animations 5s infinite alternate;
+}
+
+.hour {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.hour div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #fff;
+    background: rgba(5, 5, 5, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.hour span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.hour span.tempo {
+    font-size: 10px;
+}
+@keyframes animations {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
