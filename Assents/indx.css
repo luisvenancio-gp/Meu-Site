@@ -256,7 +256,7 @@ body {
 
 }
 .rodape {
-    background: var(--e);
+    background: var(--d);
     gap: 16px;
    
     padding: 0.6rem;
@@ -265,4 +265,5 @@ body {
 .nome {
     margin-left: 10px;
 }
+
 
