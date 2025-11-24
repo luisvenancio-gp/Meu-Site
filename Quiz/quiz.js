@@ -39,6 +39,45 @@ const questions = [
         ]
 
     },
+    {
+  question: "Quem foi escolhido como o 'As' do Blue Lock?",
+  answers: [
+    { id: 1, text: "Rin Itoshi", correct: true },
+    { id: 2, text: "Isagi Yoichi", correct: false },
+    { id: 3, text: "Barou Shoei", correct: false },
+    { id: 4, text: "Nagi Seishiro", correct: false }
+  ]
+},
+    {
+  question: "Qual jogador é conhecido como 'Rei' dentro do Blue Lock?",
+  answers: [
+    { id: 1, text: "Barou Shoei", correct: true },
+    { id: 2, text: "Kunigami Rensuke", correct: false },
+    { id: 3, text: "Chigiri Hyoma", correct: false },
+    { id: 4, text: "Gagamaru Gin", correct: false }
+  ]
+},{
+  question: "Quem tem como habilidade principal a velocidade explosiva?",
+  answers: [
+    { id: 1, text: "Chigiri Hyoma", correct: true },
+    { id: 2, text: "Isagi Yoichi", correct: false },
+    { id: 3, text: "Niko Ikki", correct: false },
+    { id: 4, text: "Raichi Jingo", correct: false }
+  ]
+},
+    {
+  question: "Qual desses jogadores é considerado um 'prodigio' no Blue Lock?",
+  answers: [
+    { id: 1, text: "Nagi Seishiro", correct: true },
+    { id: 2, text: "Kunigami Rensuke", correct: false },
+    { id: 3, text: "Isagi Yoichi", correct: false },
+    { id: 4, text: "Bachira Meguru", correct: false }
+  ]
+},
+
+
+
+
 ]
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -116,4 +155,5 @@ nextButton.addEventListener("click",()=>{
         startQuiz();
     }
 })
+
 startQuiz();
