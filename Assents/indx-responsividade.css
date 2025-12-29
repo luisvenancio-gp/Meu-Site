@@ -41,7 +41,7 @@
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .navg {
         display: none;
     }
@@ -54,4 +54,5 @@
     .open {
         display: block;
     }
+
 }
