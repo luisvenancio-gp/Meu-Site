@@ -13,5 +13,15 @@ function en(event) {
     window.open(url, '_blank');
 }
 
+function menu() {
+    let menuh = document.querySelector(".erre");
+    if (menuh.classList.contains('open')) {
+        document.querySelector(".menuh").src = "img/menu-aberto.png";
 
+        menuh.classList.remove("open");
+    } else {
+        menuh.classList.add("open");
+        document.querySelector(".menuh").src = "img/alfabeto.png";
+    }
+}
 
