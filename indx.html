@@ -9,57 +9,50 @@
     <link rel="stylesheet" href="Assents/indx-responsividade.css">
     <link rel="shortcut icon" href="IMG_9839.PNG" type="image/x-icon">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEDJSJYGFP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEDJSJYGFP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-QEDJSJYGFP');
-</script>
+        gtag('config', 'G-QEDJSJYGFP');
+    </script>
 </head>
 
 <body>
+
+
     <header>
-        <diV class="part">
+        <div class="part"></div>
 
-        </diV>
         <nav class="navg">
-
             <ul class="menu">
-
-                <li><a class="link" href="#ini">Inicio</a>
-                <li><a class="link" href="#sob">Sobre</a>
-                <li><a class="link" href="#especialidades">Especialidades</a>
-                <li><a class="link" href="#proj">Projectos</a>
-                <li><a class="link" href="#cont">Contacto</a>
-
+                <li><a class="link" href="#ini">Início</a></li>
+                <li><a class="link" href="#sob">Sobre</a></li>
+                <li><a class="link" href="#especialidades">Especialidades</a></li>
+                <li><a class="link" href="#proj">Projetos</a></li>
+                <li><a class="link" href="#cont">Contato</a></li>
             </ul>
         </nav>
-        <nav class="fixa">
-            <nav class="erre">
-                <ul class="menu-1">
 
-                    <li><a class="link-1" href="#ini">Inicio</a>
-                    <li><a class="link-1" href="#sob">Sobre</a>
-                    <li><a class="link-1" href="#especialidades">Especialidades</a>
-                    <li><a class="link-1" href="#proj">Projectos</a>
-                    <li><a class="link-1" href="#cont">Contacto</a>
+        <div class="fixa"><img class="menuh" onclick="menu()" src="img/menu-aberto.png" alt="Abrir menu"></div>
 
-            </nav>
+        <nav class="erre" aria-hidden="true">
+            <ul class="menu-1">
+                <li><a class="link-1" href="#ini">Início</a></li>
+                <li><a class="link-1" href="#sob">Sobre</a></li>
+                <li><a class="link-1" href="#especialidades">Especialidades</a></li>
+                <li><a class="link-1" href="#proj">Projetos</a></li>
+                <li><a class="link-1" href="#cont">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="fixa"><img class="menuh" onclick="menu()" src="img/menu-aberto.png" alt="menu-hamburguer"></div>
 
     <main id="ini" class="cab">
-
-        <img src="img/Foto-Perfil.jpg" class="foto-perfil" alt="foto-perfil">
-        <a href="https://www.facebook.com/share/16M18Fr685/" target="_blank" rel="self">
-            <h1 class="h1">Luís Venâncio</h1>
-        </a>
-
+        <img src="img/Foto-Perfil.jpg" class="foto-perfil" alt="Foto de perfil de Luís Venâncio">
+        <h1 class="h1">Luís Venâncio</h1>
         <p class="t1">Desenvolvedor Front-End</p>
-
+        <a class="cta" href="#proj">Ver meus projetos</a>
     </main>
 
     <section id="sob" class="sob">
@@ -87,69 +80,62 @@
 
     <!-- Especialidades -->
 
-    <section id="especialidades">
-        <section id="proj" class="proj">
-            <h2 class="titulo" id="h1-p">Especialidades</h2>
-            <div class="proj-caixa">
+    <section id="especialidades" class="proj">
+        <h2 class="titulo">Especialidades</h2>
+        <div class="proj-caixa">
 
-                <div class="proj-card">
-                    <a class="nome-proj" href="#"><img src="img/arquivo-html.png" class="img-1"></a>
-
-                    <div class="espacamento">
-                        <h3 class="nome-proj"><a class="nome-proj">HTML5</a></h3>
-                        <p class="info-proj">Especialista em criar a estrutura sólida de aplicações web modernas utilizando HTML5 semântico.</p>
-                    </div>
+            <div class="proj-card">
+                <a class="nome-proj" href="#"><img src="img/arquivo-html.png" class="img-1" alt="HTML5"></a>
+                <div class="espacamento">
+                    <h3 class="nome-proj"><a class="nome-proj" href="#">HTML5</a></h3>
+                    <p class="info-proj">Especialista em criar a estrutura sólida de aplicações web modernas utilizando HTML5 semântico.</p>
                 </div>
-
-                <div class="proj-card">
-                    <a class="nome-proj" href="#"><img src="img/css.png" class="img-1"></a>
-
-                    <div class="espacamento">
-                        <h3 class="nome-proj"><a class="nome-proj" href="#">CSS3</a></h3>
-                        <p class="info-proj">Transformo protótipos em interfaces reais e responsivas utilizando CSS3 avançado.</p>
-                    </div>
-                </div>
-
-                <div class="proj-card">
-
-                    <a class="nome-proj" href="#"><img src="img/j (1).png" class="img-1"></a>
-                    <div class="espacamento">
-                        <h3 class="nome-proj"><a class="nome-proj" href="#">Javascript</a></h3>
-                        <p class="info-proj">
-                           Desenvolvimento de aplicações web utilizando JavaScript moderno.</p>
-                    </div>
-                </div>
-
             </div>
 
-        </section>
+            <div class="proj-card">
+                <a class="nome-proj" href="#"><img src="img/css.png" class="img-1" alt="CSS3"></a>
+                <div class="espacamento">
+                    <h3 class="nome-proj"><a class="nome-proj" href="#">CSS3</a></h3>
+                    <p class="info-proj">Transformo protótipos em interfaces reais e responsivas utilizando CSS3 avançado.</p>
+                </div>
+            </div>
 
+            <div class="proj-card">
+                <a class="nome-proj" href="#"><img src="img/j (1).png" class="img-1" alt="JavaScript"></a>
+                <div class="espacamento">
+                    <h3 class="nome-proj"><a class="nome-proj" href="#">JavaScript</a></h3>
+                    <p class="info-proj">Desenvolvimento de aplicações web utilizando JavaScript moderno.</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- fim Especialidades -->
 
 
     <section id="proj" class="proj">
-        <h2 class="titulo" id="h1-p">Meus Projectos</h2>
+        <h2 class="titulo">Meus Projectos</h2>
         <div class="proj-caixa">
 
             <div class="proj-card">
-                <a class="nome-proj" href="Calendario de Tarefas/indx.html" rel="_self" target="_blank"><img
+                <a class="nome-proj" href="Calendario de Tarefas/indx.html" target="_blank" rel="noopener noreferrer"><img
                         src="img/Proj1-To do List.jpg" class="img"></a>
 
                 <div class="espacamento">
-                    <h3 class="nome-proj"><a class="nome-proj" href="Calendario de Tarefas/indx.html" rel="_self"
-                            target="_blank">To Do List</a></h3>
-                    <p class="info-proj">Uma to‑do list (em português, lista de tarefas) é uma ferramenta de organização pessoal ou profissional. Ela permite que você anote todas as atividades que precisa realizar, visualize prioridades e acompanhe o progresso. O conceito é simples: escrever o que deve ser feito e, conforme as tarefas são concluídas, marcá‑las ou riscá‑las.</p>
+                    <h3 class="nome-proj"><a class="nome-proj" href="Calendario de Tarefas/indx.html" target="_blank" rel="noopener noreferrer">To Do List</a></h3>
+                    <p class="info-proj">Uma to‑do list (em português, lista de tarefas) é uma ferramenta de organização
+                        pessoal ou profissional. Ela permite que você anote todas as atividades que precisa realizar,
+                        visualize prioridades e acompanhe o progresso. O conceito é simples: escrever o que deve ser
+                        feito e, conforme as tarefas são concluídas, marcá‑las ou riscá‑las.</p>
                 </div>
             </div>
 
             <div class="proj-card">
-                <a class="nome-proj" href="#"><img src="img/Proj2-Quizer.jpg" class="img"></a>
+                <a class="nome-proj" href="Quiz/quiz.html" target="_blank" rel="noopener noreferrer"><img src="img/Proj2-Quizer.jpg" class="img" alt="Quiz Blue Lock"></a>
 
                 <div class="espacamento">
-                    <h3 class="nome-proj"><a class="nome-proj" href="Quiz/quiz.html" rel="_self"
-                            target="_blank">Quiz-Blue Lock</a></h3>
+                    <h3 class="nome-proj"><a class="nome-proj" href="Quiz/quiz.html" target="_blank" rel="noopener noreferrer">Quiz-Blue Lock</a></h3>
                     <p class="info-proj">um quiz de Blue Lock é uma forma divertida de testar ou descobrir seu nível de
                         conhecimento sobre o anime/mangá.</p>
                 </div>
@@ -157,11 +143,10 @@
 
             <div class="proj-card">
 
-                <a class="nome-proj" href="Relógio-Digital/indx.html" rel="_self" target="_blank"><img
-                        src="img/Proj3-Relogio-digital.jpg" class="img"></a>
+                <a class="nome-proj" href="Relógio-Digital/indx.html" target="_blank" rel="noopener noreferrer"><img
+                        src="img/Proj3-Relogio-digital.jpg" class="img" alt="Relógio Digital"></a>
                 <div class="espacamento">
-                    <h3 class="nome-proj"><a class="nome-proj" href="Relógio-Digital/indx.html" rel="_self"
-                            target="_blank">Relógio-Digital</a></h3>
+                    <h3 class="nome-proj"><a class="nome-proj" href="Relógio-Digital/indx.html" target="_blank" rel="noopener noreferrer">Relógio-Digital</a></h3>
                     <p class="info-proj">
                         um relógio web é uma versão online de um relógio tradicional, acessível via navegador, que pode
                         mostrar a hora local ou mundial com recursos extras de personalização.</p>
@@ -177,10 +162,10 @@
 
         <form class="form-cont" id="form-cont" onsubmit="en(event)">
             <div class="text">
-                <input placeholder="Nome" class="textarea" id="nome">
+                <input type="text" name="nome" placeholder="Nome" class="textarea" id="nome" required>
             </div>
             <div class="text">
-                <textarea class="textarea" placeholder="Degite sua Mensagem" rows="2" id="sms"></textarea>
+                <textarea name="sms" class="textarea" placeholder="Digite sua mensagem" rows="3" id="sms" required></textarea>
             </div>
             <button type="submit" class="btn">Enviar WhatsApp</button>
         </form>
@@ -188,16 +173,13 @@
     </section>
 
     <footer class="rodape">
-
-
-        <p>
-
-        <h5 class="nome"> Luís Venâncio &copy; </h5>
-        <a href="https://www.facebook.com/share/16M18Fr685/" target="_blank" rel="self"><img src="img/facebook (1).png"
-                class="svg"></a>
-        <a href="https://www.instagram.com/luis_venancio_gp?igsh=MXI2MmN6ZzFjYm84NQ==" target="_blank" rel="self"><img
-                src="img/instagram.png" class="svg"></a>
-        </p>
+        <div class="rodape-content">
+            <h5 class="nome">Luís Venâncio &copy;</h5>
+            <div class="rodape-links">
+                <a href="https://www.facebook.com/share/16M18Fr685/" target="_blank" rel="noopener noreferrer"><img src="img/facebook (1).png" class="svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/luis_venancio_gp?igsh=MXI2MmN6ZzFjYm84NQ==" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" class="svg" alt="Instagram"></a>
+            </div>
+        </div>
     </footer>
     <script src="Assents/indx.js">
 
@@ -206,4 +188,3 @@
 
 
 </html>
-

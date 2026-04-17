@@ -1,27 +1,43 @@
 function en(event) {
     event.preventDefault();
 
-    const nome = document.getElementById('nome').value;
-    const sms = document.getElementById('sms').value;
+    const nome = document.getElementById('nome')?.value.trim();
+    const sms = document.getElementById('sms')?.value.trim();
     const tln = '923525563';
 
-    const texto = `Ola! Me chamao ${nome}, ${sms}`;
+    if (!nome || !sms) {
+        alert('Por favor, preencha nome e mensagem antes de enviar.');
+        return;
+    }
+
+    const texto = `Olá! Me chamo ${nome} e gostaria de dizer: ${sms}`;
     const smsf = encodeURIComponent(texto);
     const url = `https://wa.me/${tln}?text=${smsf}`;
 
-    console.log(url);
-    window.open(url, '_blank');
+    window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 function menu() {
-    let menuh = document.querySelector(".erre");
-    if (menuh.classList.contains('open')) {
-        document.querySelector(".menuh").src = "img/menu-aberto.png";
+    const mobileNav = document.querySelector('.erre');
+    const mobileIcon = document.querySelector('.menuh');
+    if (!mobileNav || !mobileIcon) return;
 
-        menuh.classList.remove("open");
-    } else {
-        menuh.classList.add("open");
-        document.querySelector(".menuh").src = "img/alfabeto.png";
-    }
+    const isOpen = mobileNav.classList.toggle('open');
+    mobileIcon.src = isOpen ? 'img/alfabeto.png' : 'img/menu-aberto.png';
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
 }
 
+const mobileLinks = document.querySelectorAll('.erre .link-1');
+mobileLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        const mobileNav = document.querySelector('.erre');
+        const mobileIcon = document.querySelector('.menuh');
+        if (!mobileNav || !mobileIcon) return;
+
+        if (mobileNav.classList.contains('open')) {
+            mobileNav.classList.remove('open');
+            mobileIcon.src = 'img/menu-aberto.png';
+            mobileNav.setAttribute('aria-hidden', 'true');
+        }
+    });
+});
