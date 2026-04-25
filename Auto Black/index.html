@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Black</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-responsividade.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>AUTO <span>BLACK</span></h1>
+        </div>
+        <button class="hamburger" id="hamburger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
+            <a href="#inicio">Início</a>
+            <a href="#busca">Estoque</a>
+            <a href="#destaques">Destaques</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="eyebrow">Seu próximo carro está aqui</p>
+                <h2>ENCONTRE O <span>CARRO</span> DOS SEUS SONHOS</h2>
+                <p>Selecione, compare e garanta o melhor negócio com a Auto Black.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="btn-buscar-hero">Buscar Veículos</button>
+                    <button class="btn btn-secondary" id="btn-saiba-mais">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assents/1.jpg" alt="Carro preto de luxo">
+            </div>
+        </div>
+    </section>
+
+    <section class="filtros" id="busca">
+        <div class="container-filtros">
+            <h2>Filtre sua busca</h2>
+            <div class="filter-grid">
+                <select id="filter-category">
+                    <option value="">Categoria</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Esportivo">Esportivo</option>
+                </select>
+                <select id="filter-brand">
+                    <option value="">Marca</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                </select>
+                <select id="filter-model">
+                    <option value="">Modelo</option>
+                    <option value="A4">A4</option>
+                    <option value="X5">X5</option>
+                    <option value="Camaro">Camaro</option>
+                </select>
+                <select id="filter-year">
+                    <option value="">Ano</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            <div class="filter-actions">
+                <button class="btn btn-primary" id="filter-search">Buscar</button>
+                <button class="btn btn-tertiary" id="filter-reset">Limpar</button>
+            </div>
+            <p class="search-message" id="search-message"></p>
+        </div>
+    </section>
+
+    <section class="section" id="destaques">
+        <div class="section-header">
+            <h2>Destaques</h2>
+            <p>Modelos selecionados com melhor performance e preço.</p>
+        </div>
+        <div class="cars">
+            <article class="card" data-category="Sedan" data-brand="Audi" data-model="A4" data-year="2024" data-price="289900">
+                <img src="assents/olav-tvedt-6lSBynPRaAQ-unsplash.jpg" alt="Audi A4">
+                <div class="card-info">
+                    <span class="tag">Sedan</span>
+                    <h3>Audi A4</h3>
+                    <p class="price">R$ 289.900</p>
+                </div>
+                <button class="btn btn-secondary detail-button">Ver Detalhes</button>
+            </article>
+
+            <article class="card" data-category="SUV" data-brand="BMW" data-model="X5" data-year="2023" data-price="214000">
+                <img src="assents/patrik-storm-alstra-pictures-h3G0z0J5mmU-unsplash.jpg" alt="BMW X5">
+                <div class="card-info">
+                    <span class="tag">SUV</span>
+                    <h3>BMW X5</h3>
+                    <p class="price">R$ 214.000</p>
+                </div>
+                <button class="btn btn-secondary detail-button">Ver Detalhes</button>
+            </article>
+
+            <article class="card" data-category="Esportivo" data-brand="Chevrolet" data-model="Camaro" data-year="2022" data-price="189000">
+                <img src="assents/ryan-spencer-c-NEiPIxpYI-unsplash.jpg" alt="Chevrolet Camaro">
+                <div class="card-info">
+                    <span class="tag">Esportivo</span>
+                    <h3>Chevrolet Camaro</h3>
+                    <p class="price">R$ 189.000</p>
+                </div>
+                <button class="btn btn-secondary detail-button">Ver Detalhes</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="offers" id="ofertas">
+        <div class="offers-header">
+            <h2>Ofertas imperdíveis</h2>
+            <p>Aproveite condições exclusivas para fechar negócio hoje.</p>
+        </div>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <h3>Entrada facilitada</h3>
+                <p>Financiamento com parcelas reduzidas.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Garantia estendida</h3>
+                <p>Revisão completa e suporte por 12 meses.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Troca rápida</h3>
+                <p>Avaliação imediata do seu usado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="nota">
+        <div>
+            <h4>Financiamento facilitado</h4>
+            <p>Melhores taxas do mercado com aprovação rápida.</p>
+        </div>
+        <div>
+            <h4>Garantia e inspeção</h4>
+            <p>Veículos revisados e prontos para rodar.</p>
+        </div>
+        <div>
+            <h4>Avalie seu carro usado</h4>
+            <p>Faça uma avaliação imediata e venda com segurança.</p>
+        </div>
+    </section>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-column">
+            <h3>Fale Conosco</h3>
+            <p>Telefone: (+244) 923525563</p>
+            <p>Email: luisvenanciogp@gmail.com</p>
+            <p class="gold">GOLD PYCLER &copy;</p>
+        </div>
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>Receba ofertas exclusivas direto no seu e-mail.</p>
+            <div class="newsletter">
+                <input type="email" id="newsletter-email" placeholder="Seu e-mail">
+                <button class="btn btn-primary" id="newsletter-submit">Assinar</button>
+            </div>
+            <p class="newsletter-message" id="newsletter-message"></p>
+        </div>
+    </footer>
+
+    <div class="modal hidden" id="detail-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal">×</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-category"></p>
+            <p id="modal-brand"></p>
+            <p id="modal-model"></p>
+            <p id="modal-year"></p>
+            <p id="modal-price"></p>
+            <p>Entre em contato para agendar um test drive ou receber melhores condições.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
